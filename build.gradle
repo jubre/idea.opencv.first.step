@@ -1,13 +1,29 @@
 apply plugin: 'java'
+apply plugin: 'application'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
+
+mainClassName = 'hello.OpenCVVersion'
+
+jar {
+    baseName = 'opencv-first-step'
+    version =  '0.0.1'
+}
 
 repositories {
     mavenCentral()
 }
 
+// Se requiere el jar para compilar
 dependencies {
     compile fileTree(dir: '/Users/junior/WorkSpace/opencv/build/bin', include: '*.jar')
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
+
+
+// Se requiere la Lib en tiempo de ejeucion
+run {
+    jvmArgs = ['-Djava.library.path=/Users/junior/WorkSpace/opencv/build/lib']
+}
+

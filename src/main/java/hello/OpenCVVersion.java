@@ -1,4 +1,4 @@
-package main.java;
+package hello;
 
 import org.opencv.core.Core;
 
