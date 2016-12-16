@@ -7,11 +7,7 @@ import org.opencv.core.Core;
  */
 public class OpenCVVersion {
 
-    static {
-        System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
-    }
-
-    public static void main(String[] args) {
-        System.out.println("hello World! + OpenCV! version: " + Core.VERSION);
+    public String getOpenCVVersion() {
+        return Core.VERSION;
     }
 }

@@ -1,10 +1,23 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
+sourceSets{
+    main{
+        java{
+            srcDir "src/main/java"
+        }
+    }
+    test{
+        java{
+            srcDir "src/test/java"
+        }
+    }
+}
+
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-mainClassName = 'hello.OpenCVVersion'
+mainClassName = 'hello.OpenCVMain'
 
 jar {
     baseName = 'opencv-first-step'
@@ -18,7 +31,8 @@ repositories {
 // Se requiere el jar para compilar
 dependencies {
     compile fileTree(dir: '/Users/junior/WorkSpace/opencv/build/bin', include: '*.jar')
-    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile "joda-time:joda-time:2.2"
+    compile group: 'junit', name: 'junit', version: '4.11'
 }
 
 
