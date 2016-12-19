@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 public class OpenCVVersionTest {
 
     @Test
-    public void verifySayHello(){
+    public void verifyOpenCVVersion(){
         assertEquals("2.4.13.1",new OpenCVVersion().getOpenCVVersion());
     }
 
