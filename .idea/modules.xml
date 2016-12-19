@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/idea.opencv.first.step.iml" filepath="$PROJECT_DIR$/.idea/modules/idea.opencv.first.step.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/idea.opencv.first.step_main.iml" filepath="$PROJECT_DIR$/.idea/modules/idea.opencv.first.step_main.iml" group="idea.opencv.first.step" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/idea.opencv.first.step_test.iml" filepath="$PROJECT_DIR$/.idea/modules/idea.opencv.first.step_test.iml" group="idea.opencv.first.step" />
+    </modules>
+  </component>
+</project>
